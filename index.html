@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!--Cabeçalho-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,77 +15,72 @@
 </head>
 
 <body>
-    <header>
+    <div class="header">
+        <img src="./img/logo-dark.png" alt="Logo da SoulCode" srcset="Imagem do Logo">
+        <h1>Bootcamp de Java Spring com Angular Web [19]</h1>
+        <p>Turma de desenvolvimento Web Full Stack da SoulCode Academy</p>
+    </div>
+    <header class="topnav">
         <ul>
-            <li><a href="#Cadastro">Cadastro </a></li>
-            <li><a href="#trajetoria">Trajetória </a></li>
-            <li><a href="#Dicas">Dicas </a></li>
-            <li><a href="#Trabalho">Orientações </a> </li>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#trajetoria">Trajetória</a></li>
+            <li><a href="#dicas">Dicas</a></li>
+            <li><a href="#trabalho">Orientações</a></li>
         </ul>
     </header>
     <main>
-        <div class="dividsorbase" id="trajetoria">
-            <h1>Trajetória de Sucesso</h1>
-            <table>
-                <tr>
-                    <th> <strong>FASE</strong> </th>
-                    <th> <strong>Descrição</strong> </th>
-                    <th> <strong>Imagem</strong> </th>
-                </tr>
-                <tr>
-                    <td>Primeira</td>
-                    <td>Inscrição no site oficial, execusãoe do teste de lógica,
-                        curso Trilha do zero e montagem do Pitch.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem3.jpg" alt="Ato de inscrição na SoulCode" width="180px"
-                                height="180px">
-                            <figcaption>Fig.1 - Ato de inscrição na SoulCode.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Segunda</td>
-                    <td>
-                        Testes da trilha zero e entrevista com recrutador para avaliação de bolsa,
-                        nesta fase se analisa a elegibilidade para a bolsa de estudos perante os clientes e o
-                        candidatos.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem2.jpg" alt="Teste de Lógica de Seleção" width="180px" height="180px">
-                            <figcaption>Fig.2 - Teste de Lógica de Seleção.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Terceira</td>
-                    <td>
+        <div class="row" id="trajetoria">
+            <div class="column">
+                <h1>Primeira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem3.jpg">
+                        <img src="/img/imagem3.jpg" alt="Fase 1">
+                    </a>
+                    <div class="desc">
+                        Inscrição no site oficial, execução do teste de lógica,
+                        curso da trilha zero e montagem do Pitch.
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Segunda Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem2.jpg">
+                        <img src="/img/imagem2.jpg" alt="Fase 2">
+                    </a>
+                    <div class="desc">
+                        Testes trilha zero e entrevista com recrutador para avaliação de bolsa,
+                        nesta fase se analisa a elegibilidade para a bolsa de estudos
+                        perante os clientes e o candidato.
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <h1>Terceira Fase</h1>
+                <div class="gallery">
+                    <a target="_blank" href="/img/imagem1.jpg">
+                        <img src="/img/imagem1.jpg" alt="Fase 3">
+                    </a>
+                    <div class="desc">
                         Dinâmica em grupo com a realização de teste on-line e
                         convocação dos alunos aprovados.
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="./img/imagem1.jpg" alt="Aprovação e convocação" width="180px" height="180px">
-                            <figcaption>Fig.3 - Aprovação e convocação.</figcaption>
-                        </figure>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="dividsorbase" id="Cadastro">
+
+        <div class="divisorbase" id="cadastro">
             <form action="#" method="">
                 <div>
                     <input type="hidden" id="id">
                 </div>
                 <div>
                     <label for="nome">Nome: </label>
-                    <input type="text" id="nome" placeholder="Entre com seu Nome">
+                    <input type="text" id="nome" placeholder="Entre com seu nome">
                 </div>
                 <div>
-                    <label for="email">E-mail: </label>
-                    <input type="email" id="email" placeholder="Entre com seu E-mail">
+                    <label for="email">E-Mail: </label>
+                    <input type="email" id="email" placeholder="Entre com seu e-mail">
                 </div>
                 <div>
                     <label for="nascimento">Data de Nascimento: </label>
@@ -92,34 +88,34 @@
                 </div>
                 <div>
                     <input type="checkbox" id="deficiencia">
-                    <label for="deficiencia">Deficiencia</label>
+                    <label for="deficiencia">Deficiencia </label>
                 </div>
                 <div>
-                    <label for="senha">Senha:</label>
+                    <label for="senha">Senha: </label>
                     <input type="password" id="senha" placeholder="Entre com a senha" maxlength="14">
                 </div>
                 <div>
-                    <label for="escolaridade">Nível Escolar: </label>
+                    <label for="escolaridade">Nível Escolar:</label>
                     <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="F1"> Fundamental <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="F1"> Fundamental<br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="M1"> Médio <br>
-                    <input type="radio" name="escolaridade" id="escolaridade" value="T1"> Tecnólogo <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="B1"> Bacharel <br>
+                    <input type="radio" name="escolaridade" id="escolaridade" value="T1"> Tecnologo <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="L1"> Licenciado <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="P1"> Pós Graduado <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="P2"> Mestrado <br>
                     <input type="radio" name="escolaridade" id="escolaridade" value="P3"> Doutorado <br>
                 </div>
                 <div>
-                    <label for="experiencia">Qual foi sua experiência com programação: </label>
-                    <input type="range" id="experiencia" min="5" max="50" 
-                    oninput="display.value=value" onchange="display.value=value">
-                    <input type="text" id="display" value="0"
-                    oninput="vol.value=value" onchange="vol.value=value" maxlength="3" size="3">
+                    <label for="experiencia">Qual foi sua experiência com programação:</label>
+                    <input type="range" id="experiencia" min="5" max="50" oninput="display.value=value"
+                        onchange="display.value=value">
+                    <input type="text" id="display" value="0" oninput="experiencia.value=value"
+                        onchange="experiencia.value=value" maxlength="3" size="3">
                 </div>
                 <div>
-                    <label for="descricao">Descrição da Experiência:</label><br>
-                    <textarea id="descricao" cols="70" rows="5" placeholder="Descreva as tecnologias conhecidas"></textarea>
+                    <label for="descricao">Descrição da Experiência: </label><br>
+                    <textarea id="descricao" cols="70" rows="5" placeholder="Entre com as tecnologias"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Enviar">
@@ -131,7 +127,6 @@
     <footer>
 
     </footer>
-
 </body>
 
 </html>
